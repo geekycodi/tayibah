@@ -1,0 +1,157 @@
+body{
+    margin:0;
+}
+
+.headbor{
+    background-color: rgba(213, 210, 207, 0.93);
+    height:150px;
+
+}
+
+.img{
+
+    margin-top:50px;
+    margin-left:200px;
+
+}
+
+ul{
+    list-style-type: none;
+    margin:0px;
+
+}
+
+.headul{
+    float:right;
+}
+
+ul li a{
+    text-decoration-line: none;
+    color:#615e5b;
+
+}
+
+ul li a:hover{
+    color:deeppink;
+}
+
+.headul li{
+    color: #615e5b;
+    padding: 50px 50px 10px 40px;
+    display:inline-block;
+}
+
+.bgimg{
+    height:660px;
+    width:100%;
+
+}
+
+
+section{
+
+    background-color: rgb(235, 231, 232);
+    height:200px;
+    margin-top:0px;
+
+}
+
+section .sec1{
+
+    color: #615e5b;
+    padding-top: 30px;
+    margin-left:150px;
+    margin-top: 0px;
+
+}
+
+section .sechead{
+    color:deeppink;
+   margin-top:20px;
+    margin-left:150px;
+    margin-bottom: auto;
+    font-size:26px;
+
+}
+
+section .sec2{
+    color: #615e5b;
+    margin-left:150px;
+
+
+}
+
+section .sec2 a{
+    line-height: 2;
+}
+
+.secimg {
+    float: right;
+    margin-bottom: 10px;
+    padding-right: 60px;
+    height: 200px;
+    width: 330px;
+    display: inline-block;
+}
+
+
+.services{
+    background-color: greenyellow;
+    height:200px;
+
+}
+
+.servli {
+    padding-top:60px;
+    padding-left: 25px;
+    padding-right:20px;
+    display: inline-block;
+
+}
+
+
+.cake{
+    margin-left: 300px;
+}
+
+
+
+.servli img{
+    padding-left: 15px;
+    padding-right: 15px;
+   text-align:center;
+    width:50px;
+    height:50px;
+
+}
+
+
+footer{
+    background-color: deeppink;
+    height:200px;
+}
+
+
+.fa-facebook-f,.fa-pinterest,.fa-twitter,.fa-google-plus{
+    font-size:25px;
+    background-color: white;
+    border-radius: 5px;
+    padding:5px 7px;
+    color:deeppink;
+    text-align:center;
+    margin-top: 100px;
+    margin-right: 20px;
+}
+
+.fa-facebook-f{
+    margin-left:550px;
+}
+
+
+
+footer p{
+    padding:10px 30px 0px 30px;
+    text-align:center;
+
+}
+
