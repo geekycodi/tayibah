@@ -1,0 +1,300 @@
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+header{
+    background-image: url("assets1/banner.jpg");
+    width:100%;
+    height:auto;
+    box-shadow: inset 0 0 0 2000px rgba(97, 97, 97, 0.74);
+}
+
+header .sidetext{
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    margin-top: 11px;
+    font-weight: bold;
+    display: inline-block;
+    font-family: sans-serif;
+}
+
+
+header nav{
+    float: right;
+    /* padding: 15px 10px; */
+    color: white;
+    /* display: inline-block; */
+    padding: 15px 20px;
+    font-weight: bold;
+    margin-top:11px;
+    font-family: sans-serif;
+}
+
+
+
+
+.menu ul li{
+    display:none;
+}
+
+header nav a{
+    margin-right:10px;
+    color:white;
+    text-decoration:none;
+
+}
+
+
+.menu label{
+    display: inline-block;
+}
+
+
+/* [BREAK DOWN MENU INTO VERTICAL] */
+.menu ul li {
+    display: block;
+    margin-top:10px;
+
+}
+
+/* [SHOW/HIDE MENU ON CHECKBOX CLICK] */
+.menu ul ,#menu-icon{
+    display: none;
+}
+
+.menu input:checked ~ ul {
+    display: block;
+    max-height: 240px;
+
+}
+
+/*header .menu  input:checked~#menu-icon {
+    display: none;
+}
+*/
+
+
+
+.roundimg{
+    border-radius:50%;
+    margin-left:40%;
+    margin-right:40%;
+    margin-top:10%;
+}
+
+.heading{
+    padding:5%;
+    text-align:center;
+    font-size:25px;
+    font-family: sans-serif;
+    font-weight:bold;
+    color:white;
+}
+
+
+.facar, .facam, .fabug {
+    text-align:center;
+    width: 100%;
+    height: auto;
+}
+
+.fa-car,.fa-camera,.fa-bug{
+    color:mediumspringgreen;
+
+}
+
+
+.fahead{
+    color:white;
+    font-family: sans-serif;
+    font-weight:bold;
+}
+
+.fabody{
+    color:#bfbaba;
+    font-family: sans-serif;
+}
+
+.btn{
+    border: 2px solid mediumspringgreen;
+    background-color: transparent;
+    border-radius: 24px;
+    padding:3%;
+    margin-left: 40%;
+    margin-right: 40%;
+    margin-top: 3%;
+    margin-bottom: 10%;
+    color: mediumspringgreen;
+    font-family: sans-serif;
+    font-size: 13px;
+}
+
+
+.img1,.img2{
+display:block;
+}
+
+.img1, .img2, .name, .email, .msg {
+    width:100%;
+    height: auto;
+}
+
+
+.imghead{
+    font-size:17px;
+    color:#575757;
+    text-align:center;
+    overflow:auto;
+}
+
+.imgbody{
+    text-align:center;
+    overflow:auto;
+}
+
+footer{
+    background-color: mediumspringgreen;
+    height:auto;
+    padding:5%;
+}
+
+.name,.email{
+    width: 96%;
+    display: inline-block;
+    padding: 12px 20px;
+    margin: 8px 20px;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+}
+
+.msg{
+    width: 96%;
+    height: 70px;
+    display: inline-block;
+    padding: 12px 16px;
+    margin: 8px 22px;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+
+}
+
+input[type=submit] {
+    margin-top: 21px;
+    margin-bottom: 52px;
+    width: 80%;
+    background-color: #4caf5000;
+    color: white;
+    padding: 14px 20px;
+    border: 1px solid white;
+    border-radius: 25px;
+    cursor: pointer;
+
+    font-weight: bold;
+    font-size: 17px;
+    margin-left: 30%;
+    margin-right:20%;
+
+}
+
+
+@media only screen and (min-width: 600px) {
+
+    .menu ul {
+        display:inline-block;
+    }
+    .menu ul li{
+        display:inline-block;
+    }
+
+    .menu ul{
+        list-style-type:none;
+        margin:0;
+        padding:0;
+
+
+    }
+
+    .menu label{
+        display:none;
+    }
+
+    .faicons{
+
+        text-align:center;
+
+    }
+
+    .facar ,.facam, .fabug{
+        display:inline-block;
+        width:33%;
+    }
+
+
+    .facar ,.facam{
+        border-right:1px solid #aba4a4;
+        padding-right:2%;
+        padding-left:2%;
+
+    }
+
+    .fabug{
+        padding-right:2%;
+        padding-left:2%;
+    }
+
+}
+
+
+@media only screen and (min-width: 780px){
+
+    .menu ul{
+        display:inline-block;
+
+    }
+    .menu label{
+        display:none;
+    }
+
+    .img1 , .img2{
+        display: inline-block;
+        margin-left: 6%;
+        margin-right: 4%;
+        margin-bottom: 5%;
+        text-align: center;
+        margin-top: 5%;
+        width:38%;
+    }
+
+
+    .name,.email {
+        width: 44%;
+        display: inline-block;
+        padding: 12px 20px;
+        margin: 8px 20px;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    .msg{
+        width: 96%;
+        height: 70px;
+        display: inline-block;
+        padding: 12px 16px;
+        margin: 8px 22px;
+        border-radius: 4px;
+        box-sizing: border-box;
+
+
+    }
+
+}
