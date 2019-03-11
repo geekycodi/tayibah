@@ -99,7 +99,7 @@ header ul{
 }
 
 .feature{
-    transform:translateX(40%);
+    margin-left: 550px;
     font-size:32px;
     font-weight:bold;
     color:#414656;
@@ -125,13 +125,12 @@ header ul{
 }
 
 .side{
-    display: flex;
-    flex-direction: column;
+    /* display: flex; */
+
     height: auto;
-    width: initial;
-    justify-content: space-evenly;
-    align-items: baseline;
-    transform: translate(60%,-120%);
+    width: fit-content;
+    display: inline-block;
+    transform: translateY(-20%);
 
 }
 
@@ -201,7 +200,7 @@ header ul{
 }
 
 label{
-    color:darkgray;
+    color:darkslategrey;
     font-family: sans-serif;
     margin-bottom: 6px;
     font-size:14px;
@@ -253,18 +252,19 @@ label{
 
 footer{
     height:400px;
-    background-color: #8700D1;
+    background-color: #8200CC;
 
 }
 
 .apply{
-    transform: translate(15%);
-    /* margin-left: 30px; */
+    /* transform: translate(15%); */
+    margin-left: 110px;
     margin-right: 0px;
     /* margin-top: 50px; */
     margin-bottom: 20px;
     border-bottom: 1px solid #868686;
-    width: 75%;
+    width: fit-content;
+
 }
 
 
