@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<head>
+
+    <title>To The New</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <style>
+        body{
+            background-color: blue;
+        }
+
+        h4{
+            text-align:center;
+            margin-bottom:20px;
+            color:white;
+            font-family: sans-serif;
+            font-size:22px;
+        }
+
+        h2{
+            text-align:center;
+            margin-bottom:20px;
+            color:white;
+            font-family: sans-serif;
+            font-size:30px;
+            font-weight: bold;
+        }
+
+
+        h5{
+            text-align:center;
+            margin-bottom:20px;
+            color:white;
+            font-family: sans-serif;
+            font-size:40px;
+        }
+    </style>
+
+
+</head>
+
+
+<body>
+
+
+<h4 id="msg">  </h4>
+
+<h2 id="time"> </h2>
+
+<h5 id="date"></h5>
+
+
+
+<script>
+    //Message
+
+
+
+//TIME
+
+    /*
+     var msg=new Date();
+     if(suffix=="PM"){
+         document.getElementById('msg').innerHTML = "Good morning";
+
+     }
+
+     else{
+         document.getElementById('msg').innerHTML = "Good evening";
+     }
+    */
+setInterval(function (){
+    //Time
+    var currentTime = new Date(),
+        hours = currentTime.getHours(),
+        minutes = currentTime.getMinutes(),
+        seconds = currentTime.getSeconds();
+
+
+        var suffix = "AM";
+        if (hours >= 12) {
+            suffix = "PM";
+            hours = hours - 12;
+        }
+
+
+    if(hours<10) {
+        hours = '0'+ hours;
+    }
+    if(minutes<10) {
+        minutes = '0'+ minutes;
+    }
+    if(seconds<10) {
+        seconds = '0' + seconds;
+    }
+
+
+        var time = (hours + ":" + minutes + " :" + seconds + " " + suffix);
+
+        document.getElementById("time").innerHTML = time;
+
+
+
+        //DAY
+        var currentDate = new Date(),
+            day = currentDate.getDate(),
+            month = currentDate.getMonth(),
+            year = currentDate.getFullYear();
+
+       /* if (month<10) {
+            month = '0' + month;
+        }*/
+        if (day.toString().length == 1) {
+            day = '0' + day;
+        }
+
+
+    var monthname=["Jan","Feb","Mar","Apr",'May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+        month=monthname[month];
+
+        var dates = (day + " " + month+ " " + year);
+
+        document.getElementById("date").innerHTML = dates;
+
+
+//MSG
+
+    var msg=new Date();
+    if(suffix=="PM"){
+        document.getElementById('msg').innerHTML = "Good evening";
+
+    }
+
+    else{
+        document.getElementById('msg').innerHTML = "Good morning";
+    }
+
+
+
+    });
+
+
+</script>
+
+
+</body>
+</html>
