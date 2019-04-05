@@ -1,0 +1,25 @@
+body{
+    box-sizing: border-box;
+}
+
+h6{
+    display:inline-block;
+    margin-top:20px;
+    font-size:18px;
+    font-weight:normal;
+
+}
+
+
+.bgColor{
+background-color: #ffdcae;
+}
+
+
+li{
+    list-style: none;
+    margin-top:12px;
+    font-weight: lighter;
+    font-size:15px;
+    background-color: white;
+}
