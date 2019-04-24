@@ -1,0 +1,41 @@
+@import  "reset";
+
+$grey-color: #bab0a5;
+
+
+
+
+.grandparent{
+    font-size:24px;
+
+
+.parent{
+
+    font-weight:bold;
+    font-size:20px;
+    color:pink;
+
+&.brother{
+     color:pink;              // for same div e.g <div class="parent brother">
+ }
+
+.child{
+    font-size:16px;
+    color:$grey-color;
+&:hover{
+     cursor:pointer;
+ }
+}
+}
+.brother{
+@extend.parent;   //inherit property of parent  y using extends css =.msg,.index{
+
+                                                                         color:pink;
+
+>.child{
+    color:red;
+}
+}
+
+}
+

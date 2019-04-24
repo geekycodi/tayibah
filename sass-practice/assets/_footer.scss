@@ -1,0 +1,194 @@
+$white:#ffffff;
+$black:#282828;
+$font:Roboto;
+$text-color:#969698;
+$green:#40D0A2;
+$icon:#626262;
+
+
+footer{
+  background-color: $black;
+  font-family: Roboto;
+
+}
+
+
+.top-footer-wrap{
+  padding: 30px 233px;
+  color: #969698;
+  height: 250px;
+  border-bottom: 1px solid #1c1c1c;
+  font-size: 14px;
+
+}
+
+.widget{
+  width: 265px;
+  display: inline-block;
+  float: left;
+  margin-right: 14px;
+
+  h3{
+    font-size:16px;
+    margin-bottom:15px;
+  }
+
+
+  p,author{
+    font-family:$font;
+    font-style:italic;
+    color:$white;
+
+    a{
+      color:$green;
+    }
+  }
+
+  author{
+
+    line-height: 2;
+  }
+
+}
+
+.text-widget{
+  height: 200px;
+}
+.flickr-widget{
+
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: 154px;
+  align-content: space-around;
+
+
+
+  img{
+    width:85px;
+    height:70px;
+
+  }
+}
+
+
+.mid-footer{
+  border:1px solid $black;
+  margin-top:20px;
+  padding:30px 233px;
+
+
+
+  ul{
+    list-style: none;
+    float:right;
+
+
+
+    li{
+      display: inline-block;
+      border:none;
+      background-color:#2E2E2E;
+      color:$icon;
+      padding:10px;
+      font-size: 24px;
+      margin-right: 8px;
+
+
+      &:hover{
+        color:$white;
+        cursor:pointer;
+      }
+
+    }
+  }
+
+
+}
+
+.text{
+  outline: none;
+  border:none;
+  background-color:#313131;
+  padding:10px;
+
+
+  &::placeholder{
+    color:$text-color;
+    font-style: italic;
+    font:$font;
+
+  }
+
+  .input-field{
+    font-size: 0;
+  }
+
+  .fa-angle-right{
+    color:$white;
+     &:hover{
+       cursor:pointer;
+       color:$green;
+  }
+
+
+  }
+}
+
+
+
+.btn {
+  @extend .text;
+  margin-left:0;
+
+}
+
+
+.bottom-footer{
+ background-color: #313131;
+  height:100px;
+  padding: 30px 200px;
+  font-size: 14px;
+
+
+
+  h4{
+    display:inline-block;
+    font-family: $font;
+    color:$white;
+    font-weight: normal;
+
+    a{
+      text-decoration: none;
+      color:$green;
+
+      &:hover{
+        cursor:pointer;
+      }
+    }
+  }
+
+
+
+
+  ul{
+    list-style: none;
+    float:right;
+
+
+      li{
+        display:inline-block;
+        font-family: $font;
+        color:$white;
+
+
+
+        &:hover{
+          color:$green;
+          cursor:pointer;
+        }
+      }
+  }
+
+
+}

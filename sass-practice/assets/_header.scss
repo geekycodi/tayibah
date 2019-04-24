@@ -1,0 +1,162 @@
+$header-color: #d8cec3;
+$white:#ffff;
+$green:#40D0A2;
+
+header {
+  background-color: #282828;
+  height:50px;
+
+
+  .bg-img{
+    display:inline-block;
+    margin-top: 3px;
+    margin-left: 175px;
+
+
+  }
+
+ .login-wrap {
+   list-style: none;
+   float: right;
+   clear: both;
+   margin-right: 243px;
+
+
+    li {
+      color: $header-color;
+      border-right: thin solid $header-color;
+      padding: 15px;
+      display:inline-block;
+      font-family: 'Roboto';
+      font-size:13px;
+
+
+      a{
+        text-decoration: none;
+        color:$header-color;
+
+      }
+
+      &:first-child{
+        font-size:15px;
+      }
+
+    }
+  }
+}
+
+
+
+
+.nav-bar{
+  height :55px;
+
+
+
+  ul{
+    list-style: none;
+
+
+
+     li{
+       border-right: thin solid #D8CEC3;
+       /* padding: 20px; */
+
+       padding: 16px 20px 20px 20px;
+       font-weight: bold;
+       display: inline-block;
+       font-family: 'Roboto';
+       font-size: 14px;
+
+
+       a{
+         text-decoration: none;
+         color:#2d2d2d;
+
+
+       }
+
+       &:first-child{
+         margin-left:188px;
+         border-left: thin solid #D8CEC3;
+       }
+
+
+      &:nth-child(7){
+         margin-left: 190px;
+         border-left: thin solid #D8CEC3;
+         width: 90px;
+
+
+       .star-badge{
+         color: #ffff;
+         background-color: #adadad;
+         font-weight: bold;
+         border-radius: 2px;
+         font-size: 13px;
+         margin-left: 5px;
+         padding: 2px;
+         vertical-align: text-top;
+
+
+         }
+       }
+
+
+       &:last-child{
+         width: 90px;
+
+
+         .cart-badge{
+           background-color: #40D0A2;
+           color: #ffff;
+           font-weight: bold;
+           border-radius: 4px;
+           font-size: 13px;
+           margin-left: 6px;
+           padding: 2px 6px 2px 3px;
+           vertical-align: text-top;
+
+           &:hover{
+             color:$green;
+           }
+
+         }
+
+
+       }
+     }
+
+
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//
